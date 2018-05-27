@@ -1,6 +1,6 @@
 # Divide-and-Conquer Reinforcement Learning
 
-This repository contains code accompaning the paper, [Divide-and-Conquer Reinforcement Learning (Ghosh et al., ICLR 2018)](https://arxiv.org/abs/1711.09874). It includes code for the DnC algorithm, and the Mujoco environments used for the empirical evaluation.
+This repository contains code accompaning the paper, [Divide-and-Conquer Reinforcement Learning (Ghosh et al., ICLR 2018)](https://arxiv.org/abs/1711.09874). It includes code for the DnC algorithm, and the Mujoco environments used for the empirical evaluation. Please see [the project website](http://dibyaghosh.com/dnc/) for videos and further details.
 
 <img src="videos/catching.gif" width="400px"/> <img src="videos/lobbing.gif" width="400px"/>
 
