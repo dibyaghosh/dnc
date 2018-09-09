@@ -96,7 +96,18 @@ class KMeansEnv(MujocoEnv):
     
     def retrieve_centers(self,full_states):
         raise NotImplementedError()
-
+    
+    def get_param_values(self):
+        if self.kmeans:
+            return dict(kmeans=True, centers=self.kmeans_centers, index=self.kmeans_index)
+        else:
+            return dict(kmeans=False)
+        
+    def set_param_values(self, params):
+        self.kmeans = params['kmeans']
+        if self.kmeans:
+            self.kmeans_centers = params['centers']
+            self.kmeans_index = params['index']
 
 
 def create_env_partitions(env, k=4):
